@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.snc.instademo.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profile_cover_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/cover" />
+
+        <ImageButton
+            android:id="@+id/profile_user_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/profile_cover_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-60dp"
+            android:background="@mipmap/man"
+            android:elevation="5dp"
+            android:padding="20dp"/>
+        <TextView
+            android:id="@+id/profile_followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="220dp"
+            android:text="Followers"/>
+        <TextView
+            android:id="@+id/profile_followers_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_followers"
+            android:layout_marginLeft="30dp"
+            android:text="458"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/profile_following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="220dp"
+            android:layout_toRightOf="@+id/profile_user_img"
+            android:text="Following"/>
+        <TextView
+            android:id="@+id/profile_following_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_following"
+            android:layout_marginLeft="120dp"
+            android:layout_toRightOf="@+id/profile_user_img"
+            android:text="251"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/profile_follow_btn"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/profile_user_img"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="10dp"
+            android:background="#0277bd"
+            android:text="Follow"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:id="@+id/profile_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@id/profile_user_img"
+            android:layout_margin="10dp"
+            android:text="Shivanagesh, 24"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="italic"/>
+    </RelativeLayout>
+
+
+
+</ScrollView>

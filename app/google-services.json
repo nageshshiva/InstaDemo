@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "515091097892",
-    "firebase_url": "https://instademo-a1855.firebaseio.com",
-    "project_id": "instademo-a1855",
-    "storage_bucket": "instademo-a1855.appspot.com"
+    "project_number": "297922816323",
+    "firebase_url": "https://instademoapp.firebaseio.com",
+    "project_id": "instademoapp",
+    "storage_bucket": "instademoapp.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:515091097892:android:954ec730c4fff03c",
+        "mobilesdk_app_id": "1:297922816323:android:954ec730c4fff03c",
         "android_client_info": {
           "package_name": "com.example.snc.instademo"
         }
       },
       "oauth_client": [
         {
-          "client_id": "515091097892-5qkmkbjt6pq005jact1tk5l04s3raecb.apps.googleusercontent.com",
+          "client_id": "297922816323-pg1dkcepoajmkv9od6p4r1kmr19emn9k.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.snc.instademo",
@@ -23,13 +23,13 @@
           }
         },
         {
-          "client_id": "515091097892-enef4ov93lhfbp5d9eg573iv80ek7j6m.apps.googleusercontent.com",
+          "client_id": "297922816323-6pe5j2oqb7771u2cag44ca8iu1tremhg.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDVfja9929-0en-V07Hq-VUL2eE6en8K9c"
+          "current_key": "AIzaSyAL1rKCCvLKEAwq2wa8rk3V9pczoVwNKBU"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "515091097892-enef4ov93lhfbp5d9eg573iv80ek7j6m.apps.googleusercontent.com",
+              "client_id": "297922816323-6pe5j2oqb7771u2cag44ca8iu1tremhg.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

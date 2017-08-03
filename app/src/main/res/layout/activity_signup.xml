@@ -1,123 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.snc.instademo.SignupActivity">
 
-    <RelativeLayout
+    <EditText
+        android:id="@+id/reg_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <EditText
-            android:id="@+id/reg_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:hint="Full Name"
-            android:inputType="textPersonName" />
+        android:layout_margin="8dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
 
-        <EditText
-            android:id="@+id/reg_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/reg_name"
-            android:layout_margin="8dp"
-            android:hint="Email"
-            android:inputType="textEmailAddress"/>
 
-        <EditText
-            android:id="@+id/reg_username"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/reg_email"
-            android:layout_margin="8dp"
-            android:hint="Username"
-            android:inputType="text"/>
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_email"
+        android:layout_margin="8dp"
+        android:hint="Password"
+        android:inputType="textWebPassword"/>
 
-        <EditText
-            android:id="@+id/reg_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/reg_username"
-            android:layout_margin="8dp"
-            android:hint="Password"
-            android:inputType="textWebPassword"/>
+    <EditText
+        android:id="@+id/reg_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_password"
+        android:layout_margin="8dp"
+        android:hint="Confirm Password"
+        android:inputType="textWebPassword"/>
 
-        <EditText
-            android:id="@+id/reg_confirm_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/reg_password"
-            android:layout_margin="8dp"
-            android:hint="Confirm Password"
-            android:inputType="textWebPassword"/>
+    <Button
+        android:id="@+id/reg_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/reg_confirm_password"
+        android:text="Signup"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false" />
 
-        <EditText
-            android:id="@+id/reg_contact"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/reg_confirm_password"
-            android:layout_margin="8dp"
-            android:hint="Contact Number"
-            android:inputType="phone"/>
-
-        <EditText
-            android:id="@+id/reg_dob"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/reg_contact"
-            android:layout_margin="8dp"
-            android:hint="D.O.B"
-            android:inputType="date"/>
-
-        <RadioGroup
-            android:id="@+id/reg_gender"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/reg_dob">
-
-            <RadioButton
-                android:id="@+id/male"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:text="Male"
-                />
-            <RadioButton
-                android:id="@+id/female"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:text="Female" />
-
-        </RadioGroup>
-
-        <LinearLayout
-            android:id="@+id/linear_layout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/reg_gender"
-            android:layout_marginLeft="60dp">
-
-            <Button
-                android:id="@+id/reg_signup"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:text="Signup"
-                android:textAllCaps="false" />
-
-            <Button
-                android:id="@+id/reg_reset"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_toRightOf="@id/reg_signup"
-                android:text="Reset"
-                android:textAllCaps="false"/>
-        </LinearLayout>
-
-    </RelativeLayout>
-</ScrollView>
+</RelativeLayout>

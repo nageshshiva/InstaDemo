@@ -28,8 +28,7 @@ public class ProfileActivity extends AppCompatActivity {
         mDatabase = FirebaseDatabase.getInstance();
         uname = (TextView)findViewById(R.id.profile_user_name);
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference myRef = database.getReference(mAuth.getCurrentUser().getUid());
+        final DatabaseReference myRef = mDatabase.getReference(mAuth.getCurrentUser().getUid());
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {

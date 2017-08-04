@@ -114,7 +114,7 @@
         android:src="@mipmap/ic_launcher" />
 
     <Button
-        android:id="@+id/btn"
+        android:id="@+id/upload_btn"
         android:layout_height="40dp"
         android:layout_width="50dp"
         android:layout_column="1"

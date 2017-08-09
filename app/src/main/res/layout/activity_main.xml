@@ -1,127 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
     tools:context="com.example.snc.instademo.MainActivity">
 
-    <ImageView
-        android:id="@+id/img1"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_column="0"
-        android:layout_margin="12dp"
-        android:layout_row="0"
-        android:src="@mipmap/ic_launcher" />
 
-    <ImageView
-        android:id="@+id/img2"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_column="1"
-        android:layout_margin="12dp"
-        android:layout_row="0"
-        android:src="@mipmap/ic_launcher" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/main_recyclerview_home"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/img3"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_column="2"
-        android:layout_margin="12dp"
-        android:layout_row="0"
-        android:src="@mipmap/ic_launcher" />
+        </android.support.v7.widget.RecyclerView>
 
-    <ImageView
-        android:id="@+id/img4"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_column="0"
-        android:layout_margin="12dp"
-        android:layout_row="1"
-        android:src="@mipmap/ic_launcher" />
+        <Button
+            android:id="@+id/upload_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_below="@+id/main_recyclerview_home"
+            android:layout_centerHorizontal="true"/>
 
-    <ImageView
-        android:id="@+id/img5"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_column="1"
-        android:layout_margin="12dp"
-        android:layout_row="1"
-        android:src="@mipmap/ic_launcher" />
-
-    <ImageView
-        android:id="@+id/img6"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_column="2"
-        android:layout_margin="12dp"
-        android:layout_row="1"
-        android:src="@mipmap/ic_launcher" />
-
-    <ImageView
-        android:id="@+id/img7"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_column="0"
-        android:layout_margin="12dp"
-        android:layout_row="2"
-        android:src="@mipmap/ic_launcher" />
-
-    <ImageView
-        android:id="@+id/img8"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_column="1"
-        android:layout_margin="12dp"
-        android:layout_row="2"
-        android:src="@mipmap/ic_launcher" />
-
-    <ImageView
-        android:id="@+id/img9"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_column="2"
-        android:layout_margin="12dp"
-        android:layout_row="2"
-        android:src="@mipmap/ic_launcher" />
-
-    <ImageView
-        android:id="@+id/img10"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_column="0"
-        android:layout_margin="12dp"
-        android:layout_row="3"
-        android:src="@mipmap/ic_launcher" />
-
-    <ImageView
-        android:id="@+id/img11"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_column="1"
-        android:layout_margin="12dp"
-        android:layout_row="3"
-        android:src="@mipmap/ic_launcher" />
-
-    <ImageView
-        android:id="@+id/img12"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_column="2"
-        android:layout_margin="12dp"
-        android:layout_row="3"
-        android:src="@mipmap/ic_launcher" />
-
-    <Button
-        android:id="@+id/upload_btn"
-        android:layout_height="40dp"
-        android:layout_width="50dp"
-        android:layout_column="1"
-        android:layout_row="4"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="20dp"
-        android:text="+"
-        android:textSize="16dp"/>
-
-</GridLayout>
+</RelativeLayout>

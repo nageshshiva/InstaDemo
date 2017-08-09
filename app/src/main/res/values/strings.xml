@@ -6,4 +6,7 @@
     <string name="login_su_bv">Sign Up</string>
     <string name="signup_submit_bv">Submit</string>
     <string name="signup_resetall_bv">Reset All</string>
+    <string name="title_home">Home</string>
+    <string name="title_share">Share</string>
+    <string name="title_notifications">notification</string>
 </resources>

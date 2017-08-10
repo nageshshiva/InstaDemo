@@ -11,6 +11,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="16dp"
+        android:src="@mipmap/insta"
         android:layout_centerHorizontal="true"/>
 
     <EditText
@@ -41,7 +42,7 @@
          android:text="@string/login_si_bv"
          android:textSize="16dp"
          android:layout_marginTop="16dp"
-         android:layout_marginLeft="25dp"
+         android:layout_marginLeft="8dp"
          android:layout_marginRight="8dp"/>
 
     <Button
@@ -53,12 +54,7 @@
         android:text="@string/login_su_bv"
         android:textSize="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginLeft="25dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"/>
-
-
-
-
-
 
 </RelativeLayout>
